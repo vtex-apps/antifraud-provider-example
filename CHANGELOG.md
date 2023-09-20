@@ -9,4 +9,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
+- Codeowners
+- teste
 - The mandatory routes for the FakeGatewayAntifraud connector
