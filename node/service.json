@@ -1,0 +1,30 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "sendAntifraudData": {
+      "path": "/fake-antifraud/transactions",
+      "public": true
+    },
+    "listManifest": {
+      "path": "/fake-antifraud/manifest",
+      "public": true
+    },
+    "getAntifraudStatus": {
+      "path": "/fake-antifraud/transactions/:transactionId",
+      "public": true
+    },
+    "preAnalysis": {
+      "path": "/fake-antifraud/pre-analysis",
+      "public": true
+    },
+    "changeTransactionStatus": {
+      "path": "/fake-antifraud/transactions/:transactionId/:newStatus",
+      "public": true
+    }
+  }
+}
